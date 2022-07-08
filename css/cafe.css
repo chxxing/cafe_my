@@ -1,0 +1,270 @@
+/* * {
+    outline: 1px solid #333;
+} */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0 0 30px 0;
+}
+
+/* header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+header .container>ul {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* newMenu */
+.newMenu {
+    padding: 100px 0 50px 0;
+}
+
+.newMenu .slick-slide {
+    margin: 0 15px;
+    transform: scale(0.9);
+    opacity: 0.4;
+    transition: transform 0.5s;
+}
+
+.newMenu .slick-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s;
+}
+
+.newMenu .slick-dots {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.newMenu .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #c4c4c4;
+    cursor: pointer;
+}
+
+.newMenu .slick-dots li.slick-active {
+    background: #d0112b;
+}
+
+.newMenu .slick-dots button {
+    display: none;
+}
+
+/* event */
+.event {
+    padding: 100px 0;
+    border-top: 1px solid #f1f1f1;
+}
+
+.event .container {
+    position: relative;
+}
+
+.event .slick-slide {
+    margin: 0 15px;
+}
+
+.event .slideArrow i {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    font-size: 60px;
+    border-radius: 5px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+
+.event .slideArrow i:nth-child(1) {
+    margin: 0 0 0 -640px;
+}
+
+.event .slideArrow i:nth-child(2) {
+    margin: 0 0 0 640px;
+}
+
+.event .slick-dots {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.event .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #c4c4c4;
+    cursor: pointer;
+}
+
+.event .slick-dots li.slick-active {
+    background: #d0112b;
+}
+
+.event .slick-dots button {
+    display: none;
+}
+
+/* sns */
+.sns {
+    padding: 100px 0;
+    border-top: 1px solid #f1f1f1;
+}
+
+.sns .snsBoxFst {
+    display: flex;
+    gap: 5px;
+    margin: 0 0 5px 0;
+}
+
+.sns .snsBoxSec {
+    display: flex;
+    gap: 5px;
+}
+
+.sns figure:hover {
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
+/* qna */
+.qna {
+    display: flex;
+}
+
+.qna>div {
+    flex: 1;
+    color: #fff;
+    letter-spacing: -0.025rem;
+}
+
+.qna h3 {
+    font-size: 21px;
+    margin: 50px 0 30px 0;
+}
+
+.qna .left {
+    text-align: right;
+    background: url(../img/store01.jpg) no-repeat center center/cover;
+}
+
+.qna .left p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 45px 0;
+}
+
+.qna .right {
+    text-align: left;
+    background: url(../img/store02.jpg) no-repeat center center/cover;
+    border-left: 1px solid #fff;
+}
+
+.qna .right p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.qna .store {
+    padding: 0 50px;
+}
+
+.qna .franchise {
+    padding: 0 50px;
+}
+
+.qna .jasehi {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+}
+
+/* footer */
+footer {
+    line-height: 80px;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+footer .top {
+    line-height: 80px;
+}
+
+footer .top::after {
+    content: "";
+    display: block;
+    margin: 0 350px;
+    width: 1200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer .top dt {
+    font-weight: 500;
+}
+
+footer .top dt,
+footer .top dd {
+    display: inline-block;
+}
+
+footer .top dt::before,
+footer .top dd~dd::before {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px;
+    height: 11px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer .top i {
+    font-size: 23px;
+    margin: 0 3px;
+}
+
+footer .container {
+    justify-content: space-between;
+    display: flex;
+}
+
+footer .bottom address {
+    font-style: normal;
+    line-height: 50px;
+}
+
+footer .bottom select {
+    font-size: 12px;
+    background: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .bottom option {
+    color: #fff;
+    background: #333;
+}
